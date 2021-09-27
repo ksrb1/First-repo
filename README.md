@@ -1,4 +1,38 @@
-    
+  /*Mark my  Words*/
+
+	int score{};
+	char grade{};
+
+	cout << "Input score to get the grade" << endl;
+	cin >> score;
+
+	if (score < 40) {
+		grade = 'F';		
+	}
+	else if ( 40 <= score && score <= 49 )
+	{
+		grade = 'D';
+	}
+	else if ( 50 <= score && score <= 59)
+	{
+		grade = 'C';
+	}
+	else if ( 60 <= score && score <= 69)
+	{
+		grade = 'B';
+	}
+	else if(score >= 70)
+	{
+		grade = 'A';
+	}
+
+	cout << "Grade: " << grade << endl;
+
+	return 0;  
+
+
+
+
 /*Starting a Band*/
 
     bool musician = 0; //only added this cause in the ppt you said we needed a bool
